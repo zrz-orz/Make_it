@@ -3,7 +3,16 @@
 ## Introduction
 This is a script to make files for cpp.
 
-Only for **CSSYZ's** students
+## What I need
+Lua (The latest Version)
+Linux (No Windows)
+
+## How to install
+clone these into file
+
+```
+chmod a+x install.lua | ./install.lua
+```
 
 ## Usage
 `Makeit [NAME]`
@@ -27,9 +36,4 @@ then you can see
 ```
 ls CSYZ12/
 p1/ p2/ p3/ p1.cpp p2.cpp p3.cpp
-
 ```
-
-## What I need
-Lua (The latest Version)
-Linux (No Windows)
