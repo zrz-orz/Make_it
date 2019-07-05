@@ -16,8 +16,20 @@ Home = os.getenv("HOME");
 
 file = io.open("./" .. arg[1] .. "/" .. arg[1] .. ".cpp", "w+");
 Tmp = io.open(Home .. "/.tmp.cpp", "r+");
+os.execute("cowsay " .. arg[1] .. ".cpp is created by zrz who is weak > Cow");
+Cow_File = io.open("./Cow", "r+");
+
 tmp = Tmp:read("*a");
-tmp = string.gsub(tmp, "COWSAY", arg[1]);
+tmp = tmp .. [[
+
+/*
+
+]];
+tmp = tmp .. Cow_File:read("*a");
+tmp = tmp .. [[
+
+*/
+]]
 file:write(tmp);
 
 io.close(file);
