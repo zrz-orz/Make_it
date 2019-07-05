@@ -6,7 +6,10 @@ This is a script to make files for cpp.
 ## What I need
 Lua (The latest Version)
 
+Cowsay
+
 Linux (No Windows)
+
 
 ## How to install
 clone these into file
