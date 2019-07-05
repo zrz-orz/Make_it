@@ -17,6 +17,7 @@ Home = os.getenv("HOME");
 file = io.open("./" .. arg[1] .. "/" .. arg[1] .. ".cpp", "w+");
 Tmp = io.open(Home .. "/.tmp.cpp", "r+");
 tmp = Tmp:read("*a");
+tmp = string.gsub(tmp, "COWSAY", arg[1]);
 file:write(tmp);
 
 io.close(file);
