@@ -32,5 +32,7 @@ tmp = tmp .. [[
 ]]
 file:write(tmp);
 
+os.execute("rm Cow");
+
 io.close(file);
 io.close(Tmp);
